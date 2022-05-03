@@ -35,7 +35,7 @@ class EventListRecyclerViewAdapter(private var events: List<Event>)
         holder.apply {
             titleTextView.text = event.title
             typeTextView.text = event.type
-            timeTextView.text = "${event.from.toLocalDate()} ${event.from.toLocalTime()} - ${event.to.toLocalTime()}"
+            timeTextView.text = "${event.start.toLocalDate()} ${event.start.toLocalTime()} - ${event.end.toLocalTime()}"
             locationTextView.text = event.location
         }
     }
